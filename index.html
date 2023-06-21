@@ -30,6 +30,45 @@
       box-sizing: border-box;
       font-family: roboto;
     }
+    #preloader{
+      height: 100vh;
+      width: 100vw;
+      background-color: white;
+      position: fixed;
+      z-index: 100;
+    }
+    .index-body {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+   }
+    .index-logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 20px;
+   }
+.index-logo img {
+  height: 100px;
+}
+.index-txt {
+  color: rgb(0,0,0,0.7);
+  font-size: 16px;
+  text-align: center;
+}
+.index-txt p {
+  font-weight: bold;
+  font-size: 18px;
+  color: rgb(0,110,255);
+}
+.loading-img{
+  padding-top: 30px;
+}
+.loading-img img{
+  height: 40px;
+}
     a {
       text-decoration: none;
     }
@@ -131,6 +170,22 @@
   </style>
 </head>
 <body>
+  <div id="preloader">
+    <div class="index-body">
+      <div class="index-logo">
+        <img src="images/index logo.png">
+      </div>
+      <div class="index-txt">
+        by
+        <p>
+          Rangaraja Chowdari
+        </p>
+      </div>
+      <div class="loading-img">
+        <img src="images/loading.gif">
+      </div>
+    </div>
+  </div>
   <nav>
     <div class="title">
       <img src="images/title.jpg">
@@ -259,5 +314,11 @@
     </div>
     </a>
   </div>
+  <script>
+    var loader = document.getElementById("preloader");
+    window.addEventListener("load", function() {
+      loader.style.display = "none";
+    })
+  </script>
 </body>
 </html>
