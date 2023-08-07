@@ -22,17 +22,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="author" content="Rangaraja chowdari">
-  <script>
-    var loader = document.getElementById("preloader");
-    window.addEventListener("load", function() {
-      loader.style.display = "none";
-    })
-
-    function menu(){
-      let menuBody = document.querySelector(".nav-body");
-      menuBody.classList.toggle('active');
-    }
-  </script>
   <title>ICAI clone website</title>
   <link rel="shortcut icon" type="image/png" href="images/favicon.png">
   <style>
@@ -219,6 +208,17 @@
   </style>
 </head>
 <body>
+  <script>
+    var loader = document.getElementById("preloader");
+    window.addEventListener("load", function() {
+      loader.style.display = "none";
+    })
+
+    function menu(){
+      let menuBody = document.querySelector(".nav-body");
+      menuBody.classList.toggle('active');
+    }
+  </script>
   <div id="preloader">
     <div class="index-body">
       <div class="index-logo">
