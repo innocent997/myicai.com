@@ -208,17 +208,6 @@
   </style>
 </head>
 <body>
-  <script>
-    var loader = document.getElementById("preloader");
-    window.addEventListener("load", function() {
-      loader.style.display = "none";
-    })
-
-    function menu(){
-      let menuBody = document.querySelector(".nav-body");
-      menuBody.classList.toggle('active');
-    }
-  </script>
   <div id="preloader">
     <div class="index-body">
       <div class="index-logo">
@@ -374,6 +363,17 @@
       <span style="font-size:15px;">Copyright 2023 ICAI.</span>
     </div>
     </a>
-  </div>  
+  </div>
+  <script>
+    var loader = document.getElementById("preloader");
+    window.addEventListener("load", function() {
+      loader.style.display = "none";
+    })
+
+    function menu(){
+      let menuBody = document.querySelector(".nav-body");
+      menuBody.classList.toggle('active');
+    }
+  </script>
 </body>
 </html>
